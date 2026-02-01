@@ -4,11 +4,7 @@
 Run the challenge instantly:
 
 ```bash
-docker run -d \
-  --restart always \
-  --name flag-red67 \
-  -p 9051:80 \
-  joshbeck2024/ctf-php-filter-chain-lesson-flag-red70:latest
+docker run -d --restart always --name flag-red67 -p 9051:80 joshbeck2024/ctf-php-filter-chain-lesson-flag-red70:latest
 ```
 
 ## Challenge Description

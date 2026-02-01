@@ -17,11 +17,7 @@ You can run this challenge instantly without cloning the code.
 
 **Docker Run Command:**
 ```bash
-docker run -d \
-  --restart always \
-  --name flag-red67 \
-  -p 9051:80 \
-  joshbeck2024/ctf-php-filter-chain-lesson-flag-red70:latest
+docker run -d --restart always --name flag-red67 -p 9051:80 joshbeck2024/ctf-php-filter-chain-lesson-flag-red70:latest
 ```
 
 Once running, access the challenge at: **http://localhost:9051**
