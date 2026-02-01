@@ -6,11 +6,14 @@
 
 $file = $_REQUEST['page'] ?? 'home.php';
 
-ob_start();
-include($file);
-$content = ob_get_contents();
-ob_end_clean();
-
-echo "Request processed.";
-// echo $content;
+if ($file === 'home.php' || $file === 'source.php') {
+    // Normal mode: Display instructions or source
+    include($file);
+} else {
+    // Challenge mode: Blind include
+    ob_start();
+    include($file);
+    ob_get_clean(); // Discard output
+    echo "Request processed.";
+}
 ?>
